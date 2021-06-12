@@ -24,5 +24,26 @@ namespace UsingGenericUnitTesting
             int maxNumber = MaxNumberCheck.MaximumIntegerNumber(10, 20, 30);
             Assert.AreEqual(30, maxNumber);
         }
+        //Float
+        [Test]
+
+
+        public void FindingMaxFloatNumberAtPosition1()
+        {
+            double maxNumber = MaxNumberCheck.MaximumFloatNumber(30.0, 20.0, 10.0);
+            Assert.AreEqual(30.0, maxNumber);
+        }
+        [Test]
+        public void FindingMaxFloatNumberAtPosition2()
+        {
+            double maxNumber = MaxNumberCheck.MaximumFloatNumber(20.0, 30.0, 10.0);
+            Assert.AreEqual(30.0, maxNumber);
+        }
+        [Test]
+        public void FindingMaxFloatNumberAtPosition3()
+        {
+            double maxNumber = MaxNumberCheck.MaximumFloatNumber(10.0, 20.0, 30.0);
+            Assert.AreEqual(30.0, maxNumber);
+        }
     }
 }
