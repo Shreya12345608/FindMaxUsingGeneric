@@ -45,5 +45,25 @@ namespace UsingGenericUnitTesting
             double maxNumber = MaxNumberCheck.MaximumFloatNumber(10.0, 20.0, 30.0);
             Assert.AreEqual(30.0, maxNumber);
         }
+        //string
+
+        [Test]
+        public void FindingMaxStringAtPosition1()
+        {
+            string maxString = MaxNumberCheck.MaximumString("Banana", "Apple", "Peach");
+            Assert.AreEqual("Peach", maxString);
+        }
+        [Test]
+        public void FindingMaxStringAtPosition2()
+        {
+            string maxString = MaxNumberCheck.MaximumString("Apple", "Banana", "Peach");
+            Assert.AreEqual("Peach", maxString);
+        }
+        [Test]
+        public void FindingMaxStringAtPosition3()
+        {
+            string maxString = MaxNumberCheck.MaximumString("Apple", "Peach", "Banana");
+            Assert.AreEqual("Peach", maxString);
+        }
     }
 }
